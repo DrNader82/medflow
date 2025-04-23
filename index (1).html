@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedFlow | Inicio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f7fa; color: #333; }
+    header { background: #004080; color: white; padding: 20px 0; text-align: center; }
+    h1 { margin: 0; font-size: 2.5em; }
+    p.tagline { margin: 5px 0 0; font-size: 1.2em; font-style: italic; }
+    main { max-width: 1000px; margin: 30px auto; padding: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover { transform: scale(1.03); }
+    .card h2 { margin-top: 0; color: #004080; }
+    .footer { text-align: center; padding: 30px 0; font-size: 0.9em; color: #777; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MedFlow</h1>
+    <p class="tagline">donde el razonamiento clínico fluye.</p>
+  </header>
+  <main>
+    <div class="grid">
+      <a href="ibc/index.html" class="card">
+        <h2>Integración Básico - Clínica</h2>
+        <p>Casos clínicos estructurados para fortalecer el razonamiento clínico desde las ciencias básicas.</p>
+      </a>
+      <a href="cardiologia/index.html" class="card">
+        <h2>Cardiología</h2>
+        <p>Infografías y contenidos interactivos sobre fisiopatología, diagnóstico y tratamiento cardiovascular.</p>
+      </a>
+      <a href="casos-clinicos/index.html" class="card">
+        <h2>Casos Clínicos</h2>
+        <p>Escenarios reales para discusión en clase, con preguntas de integración diagnóstica y terapéutica.</p>
+      </a>
+      <a href="flow-cases/index.html" class="card">
+        <h2>Flow Cases</h2>
+        <p>Casos interactivos paso a paso diseñados para pensar como un internista en formación.</p>
+      </a>
+    </div>
+  </main>
+  <div class="footer">
+    © 2025 MedFlow · Proyecto educativo de medicina interna y cardiología
+  </div>
+</body>
+</html>
