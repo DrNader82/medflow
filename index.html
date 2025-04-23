@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MedFlow | Inicio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f5f7fa; color: #333; }
-    header { background: #004080; color: white; padding: 20px 0; text-align: center; }
-    h1 { margin: 0; font-size: 2.5em; }
-    p.tagline { margin: 5px 0 0; font-size: 1.2em; font-style: italic; }
-    main { max-width: 1000px; margin: 30px auto; padding: 20px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 20px;
-      transition: transform 0.2s;
-      text-decoration: none;
-      color: inherit;
-    }
-    .card:hover { transform: scale(1.03); }
-    .card h2 { margin-top: 0; color: #004080; }
-    .footer { text-align: center; padding: 30px 0; font-size: 0.9em; color: #777; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedFlow | Inicio - Donde el Razonamiento Clínico Fluye</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Aplicar la fuente Inter al cuerpo del documento */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>MedFlow</h1>
-    <p class="tagline">donde el razonamiento clínico fluye.</p>
-  </header>
-  <main>
-    <div class="grid">
-      <a href="ibc/index.html" class="card">
-        <h2>Integración Básico - Clínica</h2>
-        <p>Casos clínicos estructurados para fortalecer el razonamiento clínico desde las ciencias básicas.</p>
-      </a>
-      <a href="cardiologia/index.html" class="card">
-        <h2>Cardiología</h2>
-        <p>Infografías y contenidos interactivos sobre fisiopatología, diagnóstico y tratamiento cardiovascular.</p>
-      </a>
-      <a href="casos-clinicos/index.html" class="card">
-        <h2>Casos Clínicos</h2>
-        <p>Escenarios reales para discusión en clase, con preguntas de integración diagnóstica y terapéutica.</p>
-      </a>
-      <a href="flow-cases/index.html" class="card">
-        <h2>Flow Cases</h2>
-        <p>Casos interactivos paso a paso diseñados para pensar como un internista en formación.</p>
-      </a>
-    </div>
-  </main>
-  <div class="footer">
-    © 2025 MedFlow · Proyecto educativo de medicina interna y cardiología
-  </div>
+<body class="bg-gray-900 text-white">
+
+    <header class="bg-blue-900 text-white py-8 shadow-md">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">MedFlow</h1>
+            <p class="text-lg md:text-xl italic text-gray-200">Donde el razonamiento clínico fluye.</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <h2 class="text-3xl font-semibold text-center mb-10 text-gray-100">Explora Nuestras Secciones</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <a href="ibc/index.html" class="block transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6 h-full flex flex-col">
+                    <h3 class="text-xl font-bold mb-3 text-blue-800">Integración Básico Clínica</h3>
+                    <p class="text-gray-600 flex-grow">Infografías, resúmenes y casos clínicos relacionados para desarrollar el razonamiento clínico.</p>
+                </div>
+            </a>
+
+            <a href="cardiologia/index.html" class="block transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                <div class="bg-yellow-100 text-gray-800 rounded-lg shadow-lg p-6 h-full flex flex-col">
+                    <h3 class="text-xl font-bold mb-3 text-yellow-800">Cardiología</h3>
+                    <p class="text-gray-700 flex-grow">Infografías y resúmenes interactivos de enfermedades frecuentes de cardiología, con un enfoque práctico y clínico.</p>
+                </div>
+            </a>
+
+            <a href="casos-clinicos/index.html" class="block transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                <div class="bg-green-100 text-gray-800 rounded-lg shadow-lg p-6 h-full flex flex-col">
+                    <h3 class="text-xl font-bold mb-3 text-green-800">Casos Clínicos</h3>
+                    <p class="text-gray-700 flex-grow">Escenarios reales para discusión en clase, con preguntas de integración diagnóstica y terapéutica.</p>
+                </div>
+            </a>
+
+            <a href="flow-cases/index.html" class="block transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
+                <div class="bg-blue-100 text-gray-800 rounded-lg shadow-lg p-6 h-full flex flex-col">
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Flow Cases</h3>
+                    <p class="text-gray-700 flex-grow">Casos interactivos paso a paso diseñados para practicar la toma de decisiones diagnósticas y terapéuticas.</p>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="text-center py-8 mt-12 border-t border-gray-700">
+        <p class="text-gray-400 text-sm">© 2025 MedFlow · Proyecto educativo de medicina interna y cardiología</p>
+        <p class="text-gray-500 text-xs mt-1">Dr. Carlos Nader</p>
+    </footer>
+
 </body>
 </html>
